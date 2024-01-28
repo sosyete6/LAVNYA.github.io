@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LAVNYA | Tatlılar</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        #header {
+            background-color: #8d0e0e;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+        #menü {
+            text-align: center;
+            padding: 20px;
+        }
+        .menü-yemek {
+            width: 80%;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        .menü-yemek img {
+            width: 40%;
+            border-radius: 25px;
+            object-fit: cover;
+            object-position: center center;
+            margin-bottom: 10px;
+        }
+        .menü-yemek h2 {
+            color: #000;
+        }
+        #footer {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+        #takipEdin {
+            font-size: 12px;
+            color: #fff;
+            margin-top: 10px;
+        }
+        #sosyalMedyaIconları {
+            margin-top: 10px;
+        }
+        #sosyalMedyaIconları img {
+            width: 30px; 
+            margin: 0 10px;
+        }
+    </style>
+</head>
+<body>
+    <div id="header" onclick="goToHomePage()">
+        <h1>LAVNYA</h1>
+    </div>
+
+    <div id="menü">
+        <div class="menü-yemek">
+            <img src="tatlılar/Trileçe.jpg" alt="Trileçe">
+            <h2>Trileçe</h2>
+            <p>Sütlü yumuşak bir tatlımızdır.</p>
+        </div>
+        <div class="menü-yemek">
+            <img src="tatlılar/SanSebastianCheesecake.jpg" alt="San Sebastian Cheesecake">
+            <h2>San Sebastian Cheesecake</h2>
+            <p>Alt ve üst kekin arasında bulunan kremaya çikolata sosu eklediğinizde tatlı krizinizi bastırmış olacaksınız.</p>
+        </div>
+        <div class="menü-yemek">
+            <img src="tatlılar/Magnolia.jpg" alt="Magnolya">
+            <h2>Magnolia</h2>
+            <p>Sütlü tatlımızın içerisine muz çilek ve cici bebe ile verdiğimiz şekil ve tatdan uzak duramayacaksınız.</p>
+        </div>
+        <div class="menü-yemek">
+            <img src="tatlılar/waffle.jpg" alt="Waffle">
+            <h2>Waffle</h2>
+            <p>Çilek muz kivi ananas olarak belirlenen meyveler ile tercih ettiğiniz çikolata sosları ile yapılır.</p>
+        </div>
+        <div class="menü-yemek">
+            <img src="tatlılar/suffle.jpg" alt="Suffle">
+            <h2>Suffle</h2>
+            <p>Sıcacık kekin tam orta kısmında bulunan yoğun çikolataya ulaşmak için sabırsızlanacaksınız.</p>
+        </div>
+        <div class="menü-yemek">
+            <img src="tatlılar/dondurmalı.jpg" alt="Browni">
+            <h2>Browni</h2>
+            <p>Browni kekin arasına koyduğumuz vanilyalı dört top dondurma ile leziz çikolatayı bastırmış oluyoruz..</p>
+        </div>
+
+    </div>
+
+    <div id="footer">
+        &copy; 2023 LAVNYA Cafe
+        <p id="takipEdin">Bizi Takip Etmeyi Unutmayınız...</p>
+        <div id="sosyalMedyaIconları">
+            <a href="https://www.facebook.com/campaign/landing.php?&campaign_id=1603087355&extra_1=s%7Cc%7C305038450787%7Ce%7Cfacebook%27%7C&placement=&creative=305038450787&keyword=facebook%27&partner_id=googlesem&extra_2=campaignid%3D1603087355%26adgroupid%3D61834755758%26matchtype%3De%26network%3Dg%26source%3Dnotmobile%26search_or_content%3Ds%26device%3Dc%26devicemodel%3D%26adposition%3D%26target%3D%26targetid%3Dkwd-362360550869%26loc_physical_ms%3D1012782%26loc_interest_ms%3D%26feeditemid%3D%26param1%3D%26param2%3D&gclid=EAIaIQobChMIsb6El_-sgwMVDch3Ch28pgV8EAAYASAAEgKqF_D_BwE" target="_blank"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAEtElEQVRYhaVXTWhcVRT+zn0vk4SUtMVmHNK0BklFxp9dIegmkS4kQqAIbiKCCxG6KOJChEgY0nZVaHdFpOhCIpiNEEi37UoGXBZnYxa1HcMkodikviZ5nXs+F+//Z5JYD1zunbn3nvOd7557zn2CI0r9d1b+/gPTQswSqAswSmIUAESwTmBdgBYFKyfP4W7rDfGPolcOWzC+ypq/hwUl5gAOZyZJQCToATBUSMiOCJcGBs3igw+k80IAJu6w/x9P56H4kuBQzkK4WxIQpcrFg+GNY0Pm2tqM7B8ZwPgya7tqfyExmbZXkBwDRe3BnBhpDhrn4oOPimwUAFR/4ttUuwpwLDIeLSIIgYAhpGgs0Yrchiw+aRs4Mxsfy/2eAEaWWcN+9zeqjgUOCEhCelAczTFkIL++MG9MG/3u+a0UE7HmiTvs3958fo/gZMpCjuKsi44BvnjL4MNXHZw9BhgBdrvAjg883iMurHZzFBIipnm82jcVxYQb2Xqy4c9TU8ZjAEgASPLfqQHg+/f68E7NZLb0VYDhCjB2TEBLZBEAhE4+2fDnASzEDIz8wBrt/hoZRnsPSRPy8/t9uHDGOWg5Tt3ey+2Pj8cz7sDE1qfSMQCg/t6CdnVILUFLaNw01Sugwfjdl+VQ4wBCXQqGeqmRfh3q+nsLAGDqy6zQ6hyVgAaLEDekeoRzwCevH24cSNYz1pv8J1bn6susuJ3H3rRaBBmucO9yQRiOz50s3oofW89xtfkcm88UPdJLRj+B4c6GN+1an7OH+JHaH2SAiROmsOrqrz42nzHUn0/N5WKBWRfK+sEAEtGQkKG+ooedpzY2x0zUJ5LP3CJSd6kYLRaTchEE4VCOLm2uXEN+loJRF6qj6VTO/I4UIh6AjpYlMYQDPRLDUReWyXyPDU+/PlGuISU7Xx3P/H64rXjz2x1QE8oLiVUBVxXrJF8rRZgqPP9VHm1bqE2ONhpkWDSy7tJyHQgA5BG+qPEAQJC4Cs+F9HFbrLu02gIwVTL/v+TRExvWgmzwZd4zYMuIyEo+VUaZK85gLyDtbQ33pzNhNtOKyIrUG6w8sI+3SA7n63deorndqyOFucFvtgr3vJhIk/eCiOyMOy+NmFZDfLVcotUgV4d9Om9HHqjV3oxoUMCiPj2OPE4XNLVcajXENwDgVLiolh7D6kerYWOqJxD1JUJFeHxIql/v5jkVLgKAAQCvUe0Y8AbD6hecW8QCCoyUEpDyLvKYRNyTIZMEAN7wGtVODAAAxsZq16hsBoGo5S06orL4CD2XDANpFjVisHl2rHYt2hcDWLss+xXHuSiKdv4WxO2AGFCrAJMeDNMzE0BCtCuOc3HtcvKNkKmr3vVqB2JmQLQReoKUR/F/ZTGQev1EL6h04JJsQ8yMd72a+TYoFHb/Zu1+f7fvPCybCL2OzzS6w6UUFF9QUROiOdBfOe/frN3Pbyu+LAB4t6qdcef0lECukPCioIzioNR+CFbTMaT0hLgyLqen8p5HcujH6dClzdpud2+B4BwgwyCh350trDOfP0ScaEV2hFgadAcWvVvlho8MIJYGK+5fj6a7qrO8/cqlgqLP/rwHogVjVnD6zF00jvZ5/i83i+YkPq4UuAAAAABJRU5ErkJggg==" alt="Facebook"></a>
+            <a href="https://www.instagram.com/mustafaumut61?igsh=dGtnOHNvMXA2Nnp5&utm_source=qr" target="_blank"><img src="data:image/png;base64,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" alt="Instagram"></a>
+            <a href="https://tr.linkedin.com/in/mustafa-umut-metin-781774289" target="_blank"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAABDUlEQVR4AWP4////gOLB44D6nTcsGIo33QHi/zTGd0B2YTiAPpYjHIHNAf/piQk6wGPW8f/rLz8HYRCbXg5AWI4GQGJ0cwDY12gAJDbcHUA4CkZAIqQUK7Ts/m/SfxBMs5RupswBaACr+P47b/5zlG/5DyzZ/r/+8hNF7vuvP//nn3r0X6JhJ+0ccPrR+/+H7735jw9cf/n5v0D1Nuo5gBxQve06zR0AjoL7b7/+//zjN4bc+ScfaOeA33///k9Yfg4mDw7u/Xdeo6uhnQP6D93FMNxlxjF0ZbRzgMXEQ9iyI90cALIMJoccDXRzAK6CZog6YNQBow6gIx54Bwx4x2RAu2bAysoEZu9o7xgAQrvkxt3WZi0AAAAASUVORK5CYII=" alt="LinkedIn"></a>
+            <a href="https://twitter.com/UmutMstfamtn" target="_blank"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAAAAABWESUoAAAA3ElEQVR4Ac2SGQDFMBBE1ylOcYpTner0neK0TnGpU53iFKc6xWl+p+f25D7InZ295Cv0mGjFUOzWDVVVa/WykaBiaBBFfsiyory3JASRjs8mInqxUGRw47CIBIy7Ew0Sh0nED4OXCwkNh8h7GrrgCkVK9a7w6Q2BjoVa6Oo9EZEDVJ7I1M4UeMDXzIEhvoukFxNMaP8o4gpon1l9qnqc7DcPIgpd7Ce0t/fJVO0q0qIsVeuY1XwNYK1gwm8J2GAqvHRF5mD7BcG0Rl6yegjw0BqdakE8Bni0RyjyDf4Y1Y0n0wNT4wAAAABJRU5ErkJggg==" alt="Twitter"></a>
+        </div>
+    </div>
+
+    <script>
+        function goToHomePage() {
+            window.location.href = "LAVNYA.html";
+        }
+    </script>
+
+</body>
+</html>
